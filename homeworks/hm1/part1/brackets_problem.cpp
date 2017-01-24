@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <iterator>
-
 using namespace std;
 
 int check(string& str);
