@@ -1,3 +1,5 @@
+#include <factory.h>
+
 int main()
 {
   SoldierFactory* fact = new SoldierFactory;
