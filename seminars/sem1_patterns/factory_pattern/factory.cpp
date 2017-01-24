@@ -1,4 +1,7 @@
 #include <factory.h>
+#include <iostream>
+#include <vector>
+#include <conio.h>
 
 int main()
 {
