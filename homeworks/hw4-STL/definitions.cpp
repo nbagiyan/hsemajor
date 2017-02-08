@@ -21,15 +21,15 @@ void movetoarray(vector<int>& dst, const list<int> lst) {
 	});
 }
 
-bool sortMin(int i, int j) {
+bool DescendingSort(const int i,const int j) {
 	return (i < j);
 }
 
 void sortLst(list<int>& src) {
-	src.sort(sortMin);
+	src.sort(DescendingSort);
 }
 
-bool lenoflst(list<int>& lst) {
+bool lenoflst(const list<int>& lst) {
 	return (lst.size() > 3);
 }
 
