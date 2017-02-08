@@ -11,8 +11,7 @@ void movetoarray(vector<int>& dst, const list<int> lst);
 void sortLst(list<int>& src);
 void arrayListToArray(const vector<list<int>> src, vector<int>& dst);
 int transformation(vector<list<int>> src);
-bool sortMin(int i, int j);
-bool lenoflst(list<int>& lst);
+bool DescendingSort(const int i,const int j);
 bool sortByMin(const list<int>& lst, const list<int>& lst1);
 
 
@@ -22,7 +21,10 @@ int transformation(vector<list<int>> src) {
 	vector<list<int>> temp(src.size());
 	vector<int> dst;
 	vector<list<int>>::iterator it;
-	it = copy_if(src.begin(), src.end(), temp.begin(), lenoflst);
+	it = copy_if(src.begin(), src.end(), temp.begin(), [](list<int> lst)
+	{
+		return (lst.size() > 3);
+	});
 	temp.resize(it - temp.begin());
 	try {
 		if (temp.empty())
